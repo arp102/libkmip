@@ -38,8 +38,8 @@ LIBS           = $(LIB_DIR)/$(LIB_NAME) $(LIB_DIR)/$(LIB_CORE_NAME) $(LIB_DIR)/$
 
 CC = cc
 AR = ar csrv
-CFLAGS  = -std=c11 -pedantic -g3 -Wall -Wextra
-LOFLAGS = -fPIC
+CFLAGS  = -std=c11 -pedantic -g3 -Wall -Wextra -fPIC
+LOFLAGS =
 SOFLAGS = -shared -Wl,-soname,$(SO_NAME)
 SOCOREFLAGS = -shared -Wl,-soname,$(SO_CORE_NAME)
 LDFLAGS = -L/usr/local/lib64 -L/usr/local/lib
